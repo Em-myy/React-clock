@@ -1,0 +1,95 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body {
+  background-color: #026b67;
+}
+.main-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.main-background-text {
+  font-size: 10rem;
+  color: #fff;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+img {
+  cursor: pointer;
+  width: 40px;
+  height: auto;
+}
+.first-component-main-background {
+  display: flex;
+  color: #fff;
+  column-gap: 450px;
+}
+.break-increase-arrow,
+.session-increase-arrow {
+  transform: rotate(180deg);
+}
+.break-length-text,
+.session-length-text {
+  font-size: 3rem;
+}
+.break-length-section,
+.session-length-session {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+.break-length,
+.session-length {
+  font-size: 3rem;
+}
+.second-component-main-background {
+  border: 10px solid #014342;
+  border-radius: 50px;
+  padding: 20px 60px;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.clock-time-text {
+  font-size: 3rem;
+}
+.clock-time {
+  font-size: 8rem;
+}
+.regenerate-image {
+  margin-left: 10px;
+}
+@media (max-width: 850px) {
+  .main-background-text {
+    font-size: 5rem;
+  }
+  .first-component-main-background {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .break-length-section,
+  .session-length-session {
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-component-main-background {
+    width: 90%;
+    padding: 20px;
+  }
+}
